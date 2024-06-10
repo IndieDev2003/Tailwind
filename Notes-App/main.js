@@ -7,5 +7,12 @@ function AddNote(){
     newNote.setAttribute('contenteditable','true')
     console.log(newNote.classList)
     container.appendChild(newNote)
-
+    SaveData()  
+}
+LoadData();
+function SaveData(){
+    localStorage.setItem("note-data",container.innerHTML)
+}
+function LoadData(){
+    container.innerHTML=localStorage.getItem("note-data")
 }

@@ -11,3 +11,14 @@ body{
     background-size: cover;
     background-position: center;
 }
+
+#note-con p span{
+    height:25px;
+    width:25px;
+    text-align: center;
+    color:white;
+    background-color: black;
+    position: absolute;
+    bottom:5;
+    right:10px;
+}
