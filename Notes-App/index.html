@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App - Tailwind CSS - Gagan Suman</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main" class="h-dvh w-dvh">
+        <div id="app" class="min-h-90 min-w-90 bg-zinc-800 m-10 border-2 rounded-xl flex flex-col">
+            <div id="up" >
+                <h1 class="p-4 text-3xl text-white font-semibold">Notes</h1>
+                <button class="m-4 bg-blue-700 px-10 py-3 rounded-md text-white font-semibold" id="add-note" onclick="AddNote()">Add Note</button>
+            </div>
+            <div class="notes-con m-3 flex items-center justify-center max-w-90 flex-wrap" id="note-con">
+                <!-- <p contenteditable="true" class="w-full bg-blue-700 p-2 center rounded-lg border-2 border-amber-200">dfg</p> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
